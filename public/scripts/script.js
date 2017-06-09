@@ -49,6 +49,10 @@ myApp.controller('ng-intro-assignment', function() {
         return salaries.toFixed(2);
 
      }
+     vm.removeCar = function( index){
+   console.log( 'in removeCar:', index );
+   vm.employees.splice( index, 1 );
+ }; //end removeCar
 
 
 });//end controller
